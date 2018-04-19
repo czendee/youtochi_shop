@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_landscape" >
+
+
+    <Button
+        android:id="@+id/botonPublicarPeri"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Publicar"
+        android:textStyle="bold"
+
+        />
+    <Button
+        android:id="@+id/botonPublicarInterPeri"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Publicar Teledirigido"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonPublicarPeri"
+        />
+
+
+
+    <Button
+        android:id="@+id/botonConsumirPeri"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechadown"
+        android:focusable="true"
+        android:text="Consumir"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonPublicarInterPeri"
+
+        />
+
+
+    <Button
+        android:id="@+id/botonControlRemoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Controles"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+        android:layout_below="@+id/botonConsumirPeri"
+        />
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/escribe_nombrecanal"
+        android:id="@+id/nombreRutina"
+        android:layout_below="@+id/botonControlRemoto"
+
+        />
+
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaleft"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="-Regresar"
+        android:textStyle="bold"
+        android:layout_below="@+id/nombreRutina"
+        />
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_landscape" >
+
+    <!--   <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="29dp"
+           android:text="Controla ROBOT"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textSize="40dp"
+           android:textStyle="bold" />
+    -->
+    <Button
+        android:id="@+id/botonUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Up"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <Button
+        android:id="@+id/botonRight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/ic_botonflecharight"
+        android:focusable="true" android:text="Right"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/botonDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechadown"
+        android:focusable="true"
+        android:text="Down"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonUp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true" />
+
+    <!--    <Button
+            android:id="@+id/block_last_number"
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/help"
+            android:layout_alignLeft="@+id/help"
+            android:layout_marginBottom="27dp"
+            android:background="@mipmap/ic_botonflechaup"
+            android:focusable="true"
+            android:text="Left"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignEnd="@+id/blocked_calls" />
+            -->
+
+    <Button
+        android:id="@+id/botonLeft"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechaleft"
+        android:focusable="true"
+        android:text="Left"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/botonDown"
+        android:layout_alignLeft="@+id/botonRight" />
+
+    <Button
+        android:id="@+id/conectar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Conectar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_alignTop="@+id/Grabar"
+        android:layout_toRightOf="@+id/InicioGrabar" />
+    <Button
+        android:id="@+id/InicioGrabar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Iniciar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+
+        android:layout_below="@+id/nombreRutina"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/FinGrabar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Fin"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:visibility="invisible"
+        />
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/escribe_nombreRutina"
+        android:id="@+id/nombreRutina"
+        android:layout_above="@+id/FinGrabar"
+        android:layout_alignRight="@+id/Publicar"
+        />
+
+    <Button
+        android:id="@+id/Publicar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Publicar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+        android:layout_below="@+id/nombreRutina"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Grabar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Grabar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/botonLeft" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vacio"
+        android:textSize="10sp" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btnBuscarDispBlue02"
+        android:layout_below="@+id/textResult"
+        android:text="@string/boton_buscar_dispositivos_blue"/>
+
+    <ListView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/lst_dispositivos02"
+        android:layout_alignRight="@+id/Publicar"
+        android:layout_alignEnd="@+id/Publicar"
+        android:layout_below="@+id/nombreRutina" />
+
+
+
+
+</RelativeLayout>

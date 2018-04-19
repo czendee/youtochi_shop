@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tochi.RobotJUEGO">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- permissions for new activity Chaman Activity -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- permissions for bluetooth functionality -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- permissions for displaying floating buttons -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- permissions for using GPS info -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+    permissions
+    when GPS isn't available and select your location provider with the getBestProvider() method.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+        <!-- <activity android:name=".LoginActivity"> -->
+        <activity android:name=".InicioActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".InicioActivity" /> -->
+        <activity android:name=".PeriscopioActivity" />
+        <activity android:name=".ChamanRV.PubliperiscopioActivity" />
+        <activity android:name=".RobotActivity" />
+        <activity android:name=".ListatareasActivity" />
+        <activity android:name=".PlaylistActivity" />
+        <activity android:name=".PlayrobotActivity" />
+        <activity android:name=".ChamanRV.PubliteleperiscopioActivity" />
+
+        <service android:name=".ChamanRV.ControlesIntentService" android:exported="false" />
+
+        <activity android:name=".GrabarActivity" />
+
+        <!-- service for floating buttons -->
+        <service android:name=".ControlesBotones" />
+
+        <activity android:name=".RobotRemotosActivity" />
+        <activity android:name=".PublicaRobotRemotoActivity" />
+    </application>
+
+</manifest>

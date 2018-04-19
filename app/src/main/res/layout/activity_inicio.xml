@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_landscape" >
+
+
+<!--    <Button
+        android:id="@+id/botonPeriscopio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Periscopio"
+        android:textStyle="bold"
+
+        />
+        -->
+
+    <Button
+        android:id="@+id/botonRobot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Robot"
+        android:textStyle="bold"
+
+        />
+    <Button
+        android:id="@+id/botonGrabar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Grabar"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonRobot"
+        />
+
+
+
+    <Button
+        android:id="@+id/botonListaTareas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechadown"
+        android:focusable="true"
+        android:text="PlayList"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonGrabar"
+
+        />
+
+    <Button
+        android:id="@+id/botonControlRemoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechadown"
+        android:focusable="true"
+        android:text="Robot Disponible para Internet"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonListaTareas"
+
+        />
+    <Button
+        android:id="@+id/botonRegresarInicio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/ic_botonflechaleft"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Salir"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonControlRemoto"
+        />
+
+
+
+
+</RelativeLayout>

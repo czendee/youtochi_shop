@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">RobotJUEGO</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="holamunl"> es prueba</string>
+
+    <!-- Strings related to Periscopio -->
+    <string name="escribe_nombrecanal">This field es prueba</string>
+
+    <!-- Strings related to RObot -->
+    <string name="escribe_nombreRutina">Nombre Nueva Rutina Grabada</string>
+    <string name="vacio">.</string>
+    <string name="boton_buscar_dispositivos_blue">Buscar Dispositivos BLUE</string>
+
+    <!-- Strings related to PlayList -->
+    <string name="escribe_tarea">Escribe Edificio</string>
+    <string name="escribe_estado">Escribe .Estado</string>
+    <string name="escribe_pais">Escribe Pais</string>
+    <string name="boton_guardar">Grabar Nueva Rutina</string>
+    <string name="boton_guardarweb">Agregar Rutina En La Web</string>
+    <string name="tituloLista">Lista de Rutinas a Ejecutar.</string>
+
+    <!-- Strings related to List of Available Robots to use -->
+
+    <string name="textTituloListaRobotsDisponibles">Lista de Robots Disponibles para usar.</string>
+
+    <string name="textTituloListaRobotsPublicar">Lista de Robots Locales, Disponibles para Dejarlos Usar en Internet.</string>
+</resources>

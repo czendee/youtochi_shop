@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_landscape" >
+
+
+    <Button
+        android:id="@+id/botonUpPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:background="@mipmap/ic_botonflechaup"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="Up"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <Button
+        android:id="@+id/botonRightPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/ic_botonflecharight"
+        android:focusable="true" android:text="Right"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/botonDownPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechadown"
+        android:focusable="true"
+        android:text="Down"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/botonUpPlay"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <Button
+        android:id="@+id/botonLeftPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechaleft"
+        android:focusable="true"
+        android:text="Left"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/botonDownPlay"
+        android:layout_alignLeft="@+id/botonRightPlay" />
+
+    <Button
+        android:id="@+id/conectarPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Conectar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_alignTop="@+id/Play"
+        android:layout_alignLeft="@+id/botonDownPlay"
+        android:layout_alignStart="@+id/botonDownPlay" />
+
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_conectarconbola"
+        android:focusable="true"
+        android:text="Play"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goToConectar"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/botonLeftPlay" />
+
+    <TextView
+        android:id="@+id/textResultPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vacio"
+        android:textSize="10sp"
+        android:layout_below="@+id/conectar"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/btnBuscarDispBlue02Play"
+        android:layout_below="@+id/conectarPlay"
+        android:text="@string/boton_buscar_dispositivos_blue"/>
+
+    <ListView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/lst_dispositivos02Play"
+        android:layout_below="@+id/btnBuscarDispBlue02Play"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

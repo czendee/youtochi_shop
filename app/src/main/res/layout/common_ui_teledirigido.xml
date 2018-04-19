@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:id="@+id/ui_layout" 
+     android:orientation="horizontal"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent" > 
+ 
+ 
+ 
+ 
+     <com.google.vrtoolkit.cardboard.CardboardView 
+         android:id="@+id/cardboard_view" 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent" 
+         android:layout_alignParentTop="true" 
+         android:layout_alignParentLeft="true"
+         />
+ 
+ 
+     <com.tochi.RobotJUEGO.ChamanRV.CardboardOverlayView
+         android:id="@+id/overlay" 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent" 
+         android:layout_alignParentLeft="true" 
+         android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/botonIndicador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_botonflechaleft"
+        android:focusable="true"
+        android:text="-Regresar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/botonDownPlay"
+        android:layout_alignLeft="@+id/botonRightPlay" />
+ 
+</RelativeLayout> 
+
